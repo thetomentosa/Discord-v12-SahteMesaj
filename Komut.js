@@ -22,17 +22,10 @@ message.channel.createWebhook(kisi.username, {avatar: kisi.displayAvatarURL({ dy
 
 };
 
-
 exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ["fakemesaj", "sahte", "sm"],
-  permLevel: 0
+  enabled: true, guildOnly: false, aliases: ["fakemesaj", "sahte", "sm"],
 };
 
 exports.help = {
-  name: "sahtemesaj",
-  description: "sahtemesaj",
-  usage: "sahtemesaj"
+  name: "sahtemesaj", usage: "sahtemesaj"
 };
-

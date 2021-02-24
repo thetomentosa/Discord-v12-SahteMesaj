@@ -3,10 +3,10 @@ exports.run = async (client, message, args) => {
 
 
 let kisi = message.mentions.users.first();
-if (message.mentions.users.size < 1) return message.reply('Ne Yazmasını İstediğini ve Kimin Yazacağını Seçmelisin \n \`Doğru Şekilde Kullanımı : p!sahtemesaj <etiket> <mesaj>\`')
+if (message.mentions.users.size < 1) return message.reply('Kimin Yazacağını Seçmelisin \n \`Doğru Şekilde Kullanımı : p!sahtemesaj <etiket> <mesaj>\`')
 
 let yazı = args.join(" ").slice(22);
-if (!yazı) return message.reply('Ne Yazmasını İstediğini ve Kimin Yazacağını Seçmelisin \n \`Doğru Şekilde Kullanımı : p!sahtemesaj <etiket> <mesaj>\`')
+if (!yazı) return message.reply('Ne Yazmasını İstediğini Yazmalısın \n \`Doğru Şekilde Kullanımı : p!sahtemesaj <etiket> <mesaj>\`')
 message.delete();
 message.channel.createWebhook(kisi.username, {avatar: kisi.displayAvatarURL({ dynamic: true })
 })
